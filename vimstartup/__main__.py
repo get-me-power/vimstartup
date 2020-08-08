@@ -1,5 +1,5 @@
-from vimstartup.measure import main
+from . import main
 
-# python -m pyflakes
+
 if __name__ == '__main__':
     main()

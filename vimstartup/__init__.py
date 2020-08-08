@@ -1,1 +1,9 @@
-__version__ = '1.1.0'
+from vimstartup.measure import start_measure
+
+
+def main():
+    start_measure()
+
+
+if __name__ == '__main__':
+    main()
