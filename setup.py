@@ -8,5 +8,5 @@ setup(name='vim-startup',
       description='Python Distribution Utilities',
       author='IK',
       author_email='ypa.ypa.ypa.t@gmail.com',
-      url='https://github.com/kazukazuinaina/vim-startup',
+      url='https://github.com/kazukazuinaina/vimstartup',
       )
