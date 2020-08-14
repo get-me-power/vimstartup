@@ -1,4 +1,5 @@
 import subprocess
+import sys
 
 
 def is_neovim(vimpath):
@@ -16,6 +17,6 @@ def vim_running(vimpath, outfile):
         cmd += [vimpath, '--startuptime', outfile, '--not-a-term', '-c', 'qall!']
     proc = subprocess.run(cmd)
     if proc.returncode != 0:
-        return print('Error')
+        sys.exit("\nCommand execution failed.")
     else:
         return True
