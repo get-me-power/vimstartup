@@ -1,8 +1,8 @@
-from vimstartup.measure import start_measure
+from vimstartup.argv_check import arg_check
 
 
 def main():
-    start_measure()
+    arg_check()
 
 
 if __name__ == '__main__':
