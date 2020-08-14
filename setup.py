@@ -10,6 +10,7 @@ setuptools.setup(
     author='IK',
     author_email='ypa.ypa.ypa.t@gmail.com',
     url='https://github.com/kazukazuinaina/vimstartup',
+    python_requires='>=3.5',
     entry_points={
         'console_scripts': [
             'vimstartup = vimstartup:main',
