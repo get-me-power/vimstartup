@@ -1,11 +1,19 @@
-# support python3.5以上
-
 import subprocess
+
+
+def is_neovim(vimpath):
+    if(str(vimpath[-1:] == "nvim")):
+        return True
+    else:
+        return False
 
 
 def vim_running(vimpath, outfile):
     cmd = []
-    cmd += [vimpath, '--startuptime', outfile, '--not-a-term', '-c', 'qall!']
+    if is_neovim(vimpath):
+        cmd += [vimpath, '--startuptime', outfile, '--headless', '-c', 'qall!']
+    else:
+        cmd += [vimpath, '--startuptime', outfile, '--not-a-term', '-c', 'qall!']
     proc = subprocess.run(cmd)
     if proc.returncode != 0:
         return print('Error')
