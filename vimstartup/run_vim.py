@@ -2,7 +2,7 @@ import subprocess
 
 
 def is_neovim(vimpath):
-    if(str(vimpath[-1:] == "nvim")):
+    if 'nvim' in str(vimpath):
         return True
     else:
         return False
