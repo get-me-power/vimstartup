@@ -24,6 +24,13 @@ If you want to measure Neovim's startup speed, simply do the following command.
 $ vimstartup --nvim
 ```
 
+You can also specify the options for Vim.
+e.g: use `--noplugin`.
+
+```
+$ vimstartup --extra --noplugin
+```
+
 All options can be seen by the following command.
 
 ```
