@@ -1,4 +1,4 @@
-name: CI
+name: Neovim
 
 on:
   push:
@@ -20,12 +20,17 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Set up Neovim
+        uses: rhysd/action-setup-vim@v1
+        with:
+          neovim: true
+
       - name: Install dependencies
         run: |
           pip install git+https://github.com/kazukazuinaina/vimstartup
       - name: Check Vim version
         run: |
-          vim --version
+          nvim --version
       - name: Run test
         run: |
-          python test/test_run.py
+          python test/test_neovim.py
