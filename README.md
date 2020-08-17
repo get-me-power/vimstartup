@@ -4,16 +4,8 @@ This is a CLI command to easily measure the startup speed of the Vim Inspired by
 
 ## Installation
 
-1. clone this repo
-
-```
-git clone https://github.com/kazukazuinaina/vimstartup
-```
-
-2. install with pip
-
-```
-cd vimstartup && pip install -e .
+```sh
+pip install git+https://github.com/kazukazuinaina/vimstartup
 ```
 
 ## Requirement
