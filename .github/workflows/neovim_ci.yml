@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install git+https://github.com/kazukazuinaina/vimstartup
+          pip install .
       - name: Check Vim version
         run: |
           nvim --version
