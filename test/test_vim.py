@@ -3,7 +3,7 @@ import subprocess
 import time
 
 
-class Test(unittest.TestCase):
+class Vim_Test(unittest.TestCase):
 
     def test_runcommand(self):
         result = subprocess.run('vimstartup')

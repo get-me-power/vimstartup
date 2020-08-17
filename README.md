@@ -1,4 +1,4 @@
-# vimstartup ![CI](https://github.com/kazukazuinaina/vimstartup/workflows/CI/badge.svg?branch=master) ![reviewdog](https://github.com/kazukazuinaina/vimstartup/workflows/reviewdog/badge.svg?branch=master)
+# vimstartup ![Neovim](https://github.com/kazukazuinaina/vimstartup/workflows/Neovim/badge.svg?branch=master) ![Vim](https://github.com/kazukazuinaina/vimstartup/workflows/Vim/badge.svg?branch=master) ![reviewdog](https://github.com/kazukazuinaina/vimstartup/workflows/reviewdog/badge.svg?branch=master)
 
 This is a CLI command to easily measure the startup speed of the Vim Inspired by [rhysd/vim-startuptime](https://github.com/rhysd/vim-startuptime)
 
