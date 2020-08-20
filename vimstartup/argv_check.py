@@ -1,6 +1,5 @@
 import argparse
 import platform
-from vimstartup.measure import start_measure
 
 
 def _get_version():
@@ -16,8 +15,4 @@ def arg_check():
     parser.add_argument('-N', '--nvim', action='store_true', help="Measuring Neovim's startup time")
     parser.add_argument('--extra', nargs=argparse.REMAINDER, help="Vim options")
     args = parser.parse_args()
-
-    if args.nvim:
-        start_measure("nvim", args.extra)
-    else:
-        start_measure("vim", args.extra)
+    return args
