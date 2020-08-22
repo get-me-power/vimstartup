@@ -23,9 +23,14 @@ jobs:
       - name: Install dependencies
         run: |
           pip install .
+          pip install coverage
       - name: Check Vim version
         run: |
           vim --version
       - name: Run test
         run: |
-          python test/test_vim.py
+          coverage test/test_vim.py
+      - name: upload coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
